@@ -17,13 +17,8 @@
     <header>
       <nav class="navbar bg-light">
         <div class="container-fluid">
-          <img
-            src="img/logo/GoodPayBanner.png"
-            height="70"
-            width="100"
-            alt=""
-          />
-          <a class="navbar-brand" href="#">[Money for Good]</a>
+          <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
+          <a class="navbar-brand" href="#">[money for good]</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -40,12 +35,7 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <img
-                src="img/logo/GoodPay.png"
-                height="50"
-                width="50"
-                alt="logo goodpay"
-              />
+              <img src="./img/logo/GoodPay.png" width="50" height="50" />
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button
                 type="button"
@@ -92,6 +82,7 @@
                           >Login</span
                         >
                         <input
+                          id="login"
                           type="text"
                           class="form-control"
                           aria-label="Sizing example input"
@@ -103,6 +94,7 @@
                           >Senha</span
                         >
                         <input
+                          id="senha"
                           type="password"
                           class="form-control"
                           aria-label="Sizing example input"
@@ -110,7 +102,11 @@
                         />
                       </div>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-outline-success" type="button">
+                        <button
+                          id="btnEntrar"
+                          class="btn btn-outline-success"
+                          type="button"
+                        >
                           Entrar
                         </button>
                         <button class="btn btn-outline-dark" type="button">
@@ -170,7 +166,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      SoulCode Academy
+                      Soulcode Academy
                     </button>
                   </h2>
                   <div
@@ -183,7 +179,7 @@
                       <p>
                         Tech For Good: 5 pilares que vão transformar o mundo:
                         Educação, Diversidade, Saúde, Longevidade e
-                        Sustentabilidade.
+                        Sustentabilidade
                       </p>
                       <p>
                         Nossa missão é a formação e o emprego, aplicando os 5
@@ -307,69 +303,67 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+        </div>
 
-          <div class="card-group">
-            <div class="card">
-              <img
-                src="img/quadrado/1.png"
-                class="card-img-top"
-                alt="Imagem Grupo Card"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Planejamento</h5>
-                <p class="card-text">
-                  Faça seu dinheiro render utilizando os sistemas de
-                  investimento do GoodPay.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">07 de julho 2022</small>
-                </p>
-              </div>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="img/quadrado/1.png"
+              class="card-img-top"
+              alt="Imagem Grupo Card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planejamento</h5>
+              <p class="card-text">
+                Faça seu dinheiro render utilizando os sistemas de investimento
+                do GoodPay.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">07 de julho 2022</small>
+              </p>
             </div>
-            <div class="card">
-              <img
-                src="img/quadrado/2.png"
-                class="card-img-top"
-                alt="Imagem Grupo Card"
-              />
-              <div class="card-body">
-                <h5 class="card-title">GP no Bolso</h5>
-                <p class="card-text">
-                  Com o App do GoodPay você acompanha seu porquinho de qualquer
-                  lugar.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">07 de julho 2022</small>
-                </p>
-              </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/quadrado/2.png"
+              class="card-img-top"
+              alt="Imagem Grupo Card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">GP no Bolso</h5>
+              <p class="card-text">
+                Com o App do GoodPay você acompanha seu porquinho de qualquer
+                lugar.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">07 de julho 2022</small>
+              </p>
             </div>
-
-            <div class="card">
-              <img
-                src="img/quadrado/3.png"
-                class="card-img-top"
-                alt="Imagem Grupo Card"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Gaste Bem</h5>
-                <p class="card-text">
-                  Planejar e gastar bem são os segredos de quem deseja um
-                  investimento futuro e sua segurança financeira.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">07 de julho 2022</small>
-                </p>
-              </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/quadrado/3.png"
+              class="card-img-top"
+              alt="Imagem Grupo Card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gaste Bem</h5>
+              <p class="card-text">
+                Planejar e gastar bem são os segredos de quem deseja um
+                investimento futuro e sua segurança financeira.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">07 de julho 2022</small>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-    
-    <!-- Modal -->
+
     <div
       class="modal fade"
-      id="exampleModal"
+      id="alertaLogin"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -377,7 +371,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Erro de login</h5>
             <button
               type="button"
               class="btn-close"
@@ -385,27 +379,19 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">Um erro aconteceu</div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Fechar</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- JavaScript Bundle with Popper -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <!-- Link do index.js-->
-    <script src="js/index.js" type="module"></script> <!-- usar o type="module para poder fazer funcionar com imports"
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
