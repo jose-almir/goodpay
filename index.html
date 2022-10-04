@@ -1,555 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodpay</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goodpay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar bg-light">
-        <div class="container-fluid">
-          <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
-          <a class="navbar-brand" href="#">[money for good]</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <img src="./img/logo/GoodPay.png" width="50" height="50" />
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Busque por algo"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Buscar
-                </button>
-              </form>
-              <div class="accordion mt-3" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Login Goodpay
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="input-group input-group-lg mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-lg"
-                          >Login</span
-                        >
-                        <input
-                          id="login"
-                          type="text"
-                          class="form-control"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-lg"
-                        />
-                      </div>
-                      <div class="input-group input-group-lg mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-lg"
-                          >Senha</span
-                        >
-                        <input
-                          id="senha"
-                          type="password"
-                          class="form-control"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-lg"
-                        />
-                      </div>
-                      <div class="d-flex flex-column mb-3">
-                        <span class="badge bg-success d-flex justify-content-center mb-3"><h6 id="captcha" class="m-2"></h6></span>
-                        <input id="input-captcha" type="text" class="form-control input-group-lg" placeholder="Digite o Resultado da Soma" required>
-                      </div>
-                      <div class="d-grid gap-2">
-                        <button id="btnEntrar" class="btn btn-outline-success" type="button">
-                          Entrar
-                        </button>
-                        <button class="btn btn-outline-dark" type="button">
-                          Cadastrar
-                        </button>
-                      </div>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <img alt="Banner good pay" src="./img/logo/GoodPayBanner.png" height="70" width="100" />
+        <a class="navbar-brand" href="#">[money for good]</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img alt="Logo goodpay" src="./img/logo/GoodPay.png" width="50" height="50" />
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busque por algo" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Login Goodpay
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="input-group input-group-lg mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-lg">Login</span>
+                      <input placeholder="Insira seu login" id="login" type="text" class="form-control"
+                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
                     </div>
-                  </div>
-                </div> 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Developer Team
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <h3>
-                        Developer Team
-                        <span class="badge bg-success">JFS5</span>
-                      </h3>
-                      <p>
-                        Este aplicativo não tem conexão com o banco de dados, o
-                        desenvolvimento deste aplicativo tem como finalidade o
-                        aprendizado de aplicações e interface web. Assim o uso
-                        deste aplicativo deve ser pensado como um protótipo não
-                        funcional.
-                      </p>
-                      <p>
-                        A aplicação usa elementos de personalização em Bootstrap
-                        5, com Javascript local, os dados utilizados para e
-                        adicionados neste interface não são enviados a um
-                        serviço.
-                      </p>
+                    <div class="input-group input-group-lg mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-lg">Senha</span>
+                      <input id="senha" placeholder="Insira sua senha" type="password" class="form-control"
+                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                      <span class="badge bg-success d-flex justify-content-center mb-3">
+                        <h6 id="captcha" class="m-2"></h6>
+                      </span>
+                      <input id="input-captcha" type="text" class="form-control input-group-lg"
+                        placeholder="Digite o Resultado da Soma" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button id="btnEntrar" class="btn btn-outline-success" type="button">
+                        Entrar
+                      </button>
+                      <button class="btn btn-outline-dark" type="button">
+                        Cadastrar
+                      </button>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Developer Team
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h3>
+                      Developer Team
+                      <span class="badge bg-success">JFS5</span>
+                    </h3>
+                    <p>
+                      Este aplicativo não tem conexão com o banco de dados, o
+                      desenvolvimento deste aplicativo tem como finalidade o
+                      aprendizado de aplicações e interface web. Assim o uso
+                      deste aplicativo deve ser pensado como um protótipo não
+                      funcional.
+                    </p>
+                    <p>
+                      A aplicação usa elementos de personalização em Bootstrap
+                      5, com Javascript local, os dados utilizados para e
+                      adicionados neste interface não são enviados a um
+                      serviço.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Soulcode Academy
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Tech For Good: 5 pilares que vão transformar o mundo:
+                      Educação, Diversidade, Saúde, Longevidade e
+                      Sustentabilidade
+                    </p>
+                    <p>
+                      Nossa missão é a formação e o emprego, aplicando os 5
+                      pilares do "Tech For Good". Ser uma escola inclusiva,
+                      que, através de nossa metodologia ágil, possa capacitar
+                      e educar em tecnologia, gerar oportunidades de emprego
+                      para todas as gerações, no início ou na ressignificação
+                      de carreira, com foco em diversidade e equidade. Numa
+                      profissão que fomente o bem-estar físico e mental,
+                      permitindo o equilíbrio entre a vida profissional e
+                      pessoal, através do trabalho remoto, com flexibilidade
+                      de horários, além de ser um negócio sustentável e
+                      responsável, socialmente.
+                    </p>
+                  </div>
+                </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Soulcode Academy
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Ajuda!
                     </button>
                   </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <p>
-                        Tech For Good: 5 pilares que vão transformar o mundo:
-                        Educação, Diversidade, Saúde, Longevidade e
-                        Sustentabilidade
-                      </p>
-                      <p>
-                        Nossa missão é a formação e o emprego, aplicando os 5
-                        pilares do "Tech For Good". Ser uma escola inclusiva,
-                        que, através de nossa metodologia ágil, possa capacitar
-                        e educar em tecnologia, gerar oportunidades de emprego
-                        para todas as gerações, no início ou na ressignificação
-                        de carreira, com foco em diversidade e equidade. Numa
-                        profissão que fomente o bem-estar físico e mental,
-                        permitindo o equilíbrio entre a vida profissional e
-                        pessoal, através do trabalho remoto, com flexibilidade
-                        de horários, além de ser um negócio sustentável e
-                        responsável, socialmente.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                      >
-                        Ajuda!
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingFour"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                 #001 - Campo Vazio
-                              </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                Os campos não podem estar vazios
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                #002 - Usuário inválido
-                              </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                Verifique o nome de usuário e tente novamente ou clique em cadastrar para fazer o cadastro.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                #003 Senha Inválida 
-                              </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                  Senha incorreta, a senha deve conter no mínimo 5 digitos numéricos.                              
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFour">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                #004 Numero de Tentativas 
-                              </button>
-                            </h2>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                  Você já fez 1 tentativa(s)! Com 3 será redirecionado(a) para recuperar a senha.                              
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingFive">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                #005 Operação Incorreta 
-                              </button>
-                            </h2>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body">
-                                  Favor verificar a soma dos 2 números e digitar a resposta correta.
-                              </div>
+
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne" aria-expanded="false"
+                              aria-controls="flush-collapseOne">
+                              #001 - Campo Vazio
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              Os campos não podem estar vazios
                             </div>
                           </div>
                         </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                              aria-controls="flush-collapseTwo">
+                              #002 - Usuário inválido
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              Verifique o nome de usuário e tente novamente ou clique em cadastrar para fazer o
+                              cadastro.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree" aria-expanded="false"
+                              aria-controls="flush-collapseThree">
+                              #003 Senha Inválida
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              Senha incorreta, a senha deve conter no mínimo 5 digitos numéricos.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseFour" aria-expanded="false"
+                              aria-controls="flush-collapseFour">
+                              #004 Numero de Tentativas
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              Você já fez 1 tentativa(s)! Com 3 será redirecionado(a) para recuperar a senha.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseFive" aria-expanded="false"
+                              aria-controls="flush-collapseFive">
+                              #005 Operação Incorreta
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                              Favor verificar a soma dos 2 números e digitar a resposta correta.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+    </nav>
+  </header>
+
+  <main class="mt-5">
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mb-3">
+              <img src="img/banner/BannerGoodPay.png" class="card-img-top" alt="Banner Goodpay Work For You" />
+              <div class="card-body">
+                <h5 class="card-title">Work for You</h5>
+                <p class="card-text">
+                  GoodPay é uma aplicação de cashback focada em ASG (Agenda de
+                  Matriz Sustentavel), assim reduzindo o volume de dinheiro
+                  impresso e capitalizando sobre o capital parado e
+                  transformando em renda para micro comunidades de
+                  empreendimento ambiental.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Publicado, 07 de julho 2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <img src="img/banner/BannerGoodPay2.png" class="card-img-top"
+                alt="Banner Promocional 'Economia com mais economia. Para dar um gás 100% CDI no seu porquinho'." />
+              <div class="card-body">
+                <h5 class="card-title">100% de CDI</h5>
+                <p class="card-text">
+                  Ao guardar seu dinheiro no fundo verde, você terá as
+                  melhores taxas de retorno e ainda um rendimento melhor que a
+                  poupança. Fora que os fundos gerados por este recurso são
+                  investidos em cooperativas de reciclagem.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Publicado, 07 de julho 2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <img src="img/banner/BannerGoodPay3.png" class="card-img-top" alt="Banner The Pig Time Goodpay" />
+              <div class="card-body">
+                <h5 class="card-title">The Pig Time</h5>
+                <p class="card-text">
+                  Ao utilizar o sistema de investimento com aniversário você
+                  aumenta consideravelmente seus lucros, porém tem que agendar
+                  uma data para quebrar o cofre, nesta data coletará os lucros
+                  acumulados e o capital novamente, aqui garantimos em
+                  investimentos de 1 ano 7% do retorno geral somado aos
+                  dividendos. "-Bora poupar no Pig Time"
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Publicado, 07 de julho 2022</small>
+                </p>
               </div>
             </div>
           </div>
         </div>
-
-      </nav>
-    </header>
-
-    <main class="mt-5">
-      <div class="container">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <img
-                  src="img/banner/BannerGoodPay.png"
-                  class="card-img-top"
-                  alt="Imagem do Banner de Promoções"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Work for You</h5>
-                  <p class="card-text">
-                    GoodPay é uma aplicação de cashback focada em ASG (Agenda de
-                    Matriz Sustentavel), assim reduzindo o volume de dinheiro
-                    impresso e capitalizando sobre o capital parado e
-                    transformando em renda para micro comunidades de
-                    empreendimento ambiental.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted"
-                      >Publicado, 07 de julho 2022</small
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3">
-                <img
-                  src="img/banner/BannerGoodPay2.png"
-                  class="card-img-top"
-                  alt="Imagem do Banner de Promoções"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">100% de CDI</h5>
-                  <p class="card-text">
-                    Ao guardar seu dinheiro no fundo verde, você terá as
-                    melhores taxas de retorno e ainda um rendimento melhor que a
-                    poupança. Fora que os fundos gerados por este recurso são
-                    investidos em cooperativas de reciclagem.
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted"
-                      >Publicado, 07 de julho 2022</small
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card mb-3">
-                <img
-                  src="img/banner/BannerGoodPay3.png"
-                  class="card-img-top"
-                  alt="Imagem do Banner de Promoções"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">The Pig Time</h5>
-                  <p class="card-text">
-                    Ao utilizar o sistema de investimento com aniversário você
-                    aumenta consideravelmente seus lucros, porém tem que agendar
-                    uma data para quebrar o cofre, nesta data coletará os lucros
-                    acumulados e o capital novamente, aqui garantimos em
-                    investimentos de 1 ano 7% do retorno geral somado aos
-                    dividendos. "-Bora poupar no Pig Time"
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted"
-                      >Publicado, 07 de julho 2022</small
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        <div class="card-group">
-          <div class="card">
-            <img
-              src="img/quadrado/1.png"
-              class="card-img-top"
-              alt="Imagem Grupo Card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Planejamento</h5>
-              <p class="card-text">
-                Faça seu dinheiro render utilizando os sistemas de investimento
-                do GoodPay.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">07 de julho 2022</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="img/quadrado/2.png"
-              class="card-img-top"
-              alt="Imagem Grupo Card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">GP no Bolso</h5>
-              <p class="card-text">
-                Com o App do GoodPay você acompanha seu porquinho de qualquer
-                lugar.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">07 de julho 2022</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="img/quadrado/3.png"
-              class="card-img-top"
-              alt="Imagem Grupo Card"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Gaste Bem</h5>
-              <p class="card-text">
-                Planejar e gastar bem são os segredos de quem deseja um
-                investimento futuro e sua segurança financeira.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">07 de julho 2022</small>
-              </p>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </main>
-    <div
-      class="modal fade"
-      id="alertaLogin"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Erro de login</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="img/quadrado/1.png" class="card-img-top"
+            alt="Imagem: Planeje, faça seu dinheiro render com planejamento." />
+          <div class="card-body">
+            <h5 class="card-title">Planejamento</h5>
+            <p class="card-text">
+              Faça seu dinheiro render utilizando os sistemas de investimento
+              do GoodPay.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho 2022</small>
+            </p>
           </div>
-          <div class="modal-body">Um erro aconteceu</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        <div class="card">
+          <img src="img/quadrado/2.png" class="card-img-top" alt="Imagem:  Gerando economia para quem precisa." />
+          <div class="card-body">
+            <h5 class="card-title">GP no Bolso</h5>
+            <p class="card-text">
+              Com o App do GoodPay você acompanha seu porquinho de qualquer
+              lugar.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho 2022</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/quadrado/3.png" class="card-img-top" alt="Imagem:  GoodPay para gastar com responsalibidade" />
+          <div class="card-body">
+            <h5 class="card-title">Gaste Bem</h5>
+            <p class="card-text">
+              Planejar e gastar bem são os segredos de quem deseja um
+              investimento futuro e sua segurança financeira.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho 2022</small>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="modal fade"
-      id="erroCaptcha"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" id="erroCaptcha">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Erro de Capctha</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">Resultado da soma incorreto!</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Fechar</button>
-          </div>
+  </main>
+  <div class="modal fade" id="alertaLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Erro de login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Um erro aconteceu</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
-    <footer id="myFooter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
-          </div>
-          <div class="col-sm-2">
-            <h5>Início</h5>
-            <ul>
-              <li><a href="">Quem Somos</a></li>
-              <li><a href="">SoulCode</a></li>
-              <li><a href="">Cadastro de Colaborador</a></li>
-              <li><a href="mapadosite.html">Mapa do site</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <h5>Serviços</h5>
-            <ul>
-              <li><a href="">Aplicativo</a></li>
-              <li><a href="">E-bank</a></li>
-              <li><a href="">Dashboard</a></li>
-              <li><a href="">Parceiros</a></li>
-  
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <h5>Suporte</h5>
-            <ul>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="">Recuperar Senha</a></li>
-              <li><a href="">Privacidade e Termos de Uso</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-3">
-            <a href="">
-              <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
-            </a>
-          </div>
+  </div>
+  <div class="modal fade" id="erroCaptcha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" id="erroCaptcha">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Erro de Capctha</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Resultado da soma incorreto!</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Fechar</button>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>© 2022 Copyright - Soulcode Academy</p>
+    </div>
+  </div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <footer id="myFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="index.html"><img src="img/logo/goodplayH.png" alt="Logo goodpay" height="85"></a>
+        </div>
+        <div class="col-sm-2">
+          <h5>Início</h5>
+          <ul>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">SoulCode</a></li>
+            <li><a href="">Cadastro de Colaborador</a></li>
+            <li><a href="mapadosite.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="">Aplicativo</a></li>
+            <li><a href="">E-bank</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Parceiros</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Suporte</h5>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="">Recuperar Senha</a></li>
+            <li><a href="">Privacidade e Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <a href="">
+            <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+          </a>
+        </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/index.js" type="module"></script>
-  </body>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2022 Copyright - Soulcode Academy</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
 </html>
