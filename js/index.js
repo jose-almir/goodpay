@@ -27,7 +27,7 @@ btnEntrar.addEventListener("click", () => {
       if (usuario.nomeUsuario == inputLogin) {
         usuarioValido = usuario;
         if (inputSenha == usuarioValido.senha) {
-          window.location.pathname = "app.html";
+          armazenarDados(usuarioValido)
         } else {
           /*modal de erro de senha precisa ser implementado
                     alertaLoginSenha.show()
@@ -94,3 +94,23 @@ function geolocalizacao() {
     };
   }
 }
+
+function armazenarDados(usuario) {
+  sessionStorage.setItem('usuario', JSON.stringify(usuario))
+  localStorage.setItem('usuario', JSON.stringify(usuario))
+  window.location.replace("app.html")
+
+}
+
+function carregarDados() {
+  const valorLogin = localStorage.getItem('usuario')
+  let validLogin = JSON.parse(valorLogin)
+
+  if (validLogin != null) {
+      window.location.replace("app.html")
+      console.log(usuarioLagado)
+  }
+  
+}
+
+carregarDados()
