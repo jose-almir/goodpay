@@ -1,0 +1,30 @@
+.divprincipal{
+    width: 100vh;
+    flex-direction: column;
+}
+.objetivo {
+    list-style-type:'Objetivo: ';
+    list-style-position: inside;
+    text-align:left !important;
+    
+  }
+  
+  .bold{
+    font-weight: none;
+  }
+  .dinheiro {
+    list-style-type: 'Dinheiro desejado: R$';
+    list-style-position: inside;
+    text-align:left !important;
+    
+  }
+  .meta {
+    list-style-type: 'Prazo: ';
+    list-style-position: inside;
+    text-align:left !important;
+  }
+  .capital {
+    list-style-type: 'Capital inicial: R$';
+    list-style-position: inside;
+    text-align:left !important;
+  }
