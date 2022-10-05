@@ -5,6 +5,7 @@
 body {
     height: 100%;
     width: 100%;
+    align-items: center;
   }
   
 header {
@@ -12,15 +13,20 @@ header {
   }
   
 .container {
+      margin: 310px;
       width: 100vh;
       height: 70vh;
       display: flex;
       justify-content: center;
       position: relative;
-      flex-wrap: wrap;
-      flex-grow: initial;
-      
+      flex-grow: column;
   }
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    margin-left: 475px;
+}
   
 hr {
     width:50%;
