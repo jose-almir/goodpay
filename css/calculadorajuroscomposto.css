@@ -67,4 +67,17 @@ h3 {
     margin: 10px 0;
 }
 
+.bodycal2 {
+    background-image: url("https://media.istockphoto.com/photos/gradient-with-reef-green-conifer-sulu-color-modern-texture-background-picture-id1063685006?k=20&m=1063685006&s=170667a&w=0&h=-MaMf70qyRxlc_lvIVABq9-Fpi4_t7XCN0KnuVtOFI4=");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.myIMG{
+    
+}
