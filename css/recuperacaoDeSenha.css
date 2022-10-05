@@ -16,8 +16,7 @@ header {
       height: 70vh;
       display: flex;
       justify-content: center;
-      position: relative;
-      
+      position: relative;     
   }
   
 hr {
@@ -31,4 +30,6 @@ hr {
         display: flex;
         flex-wrap:wrap;
         gap:16px;
+        width: 100vh;
 }
+  }
