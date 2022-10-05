@@ -1,0 +1,21 @@
+.container-conta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-cadastro {
+    width: 500px;
+}
+
+.container-image {
+    width: 500px;
+}
+
+#titulo1 {
+    text-align: center;
+}
+
+#btnCadastrar {
+    width: 100%;
+}

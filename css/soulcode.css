@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box; 
+}
+
+:root {
+    --azul: #0f637a;
+}
+
+.navbar{
+    background-color: var(--azul);
+}
+
+.div-proposito{
+    background-color: rgba(221, 221, 221, 0.523);
+}
+
+.div-comeco{
+    width: 600px;
+}
+
+p{
+    text-align: justify;
+}
+
+img{
+    margin: auto;
+    display: block;
+}

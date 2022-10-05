@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cadastrostyles.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+  <div class="container-conta">
+  <div class="container-cadastro m-3" >
+    <h3 id="titulo1">Crie sua conta</h3><hr>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="form-floating mb-3 " >
+        <input type="text" class="form-control" id="usuario" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+        <label for="validationTextarea" class="form-label">Usuário</label>
+        <div class="valid-feedback">
+            Bom trabalho!
+        </div>
+        <div class="invalid-feedback">
+            Preencha seu usuário
+        </div>
+      </div>
+      <div class="form-floating mb-3" >
+        <input type="email" class="form-control" id="email" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+        <label for="validationCustom02"  class="form-label">Email</label>
+        <div class="valid-feedback">
+            Bom trabalho!
+        </div>
+        <div class="invalid-feedback">
+            Preencha seu email
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="senha" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+        <label for="validationCustom03" >Senha</label>
+        <div class="valid-feedback">
+            Bom trabalho!
+        </div>
+        <div class="invalid-feedback">
+            Preencha sua senha
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" id="confirmarSenha" name="campoSenha" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" required/> 
+        <label for="validationCustom03" >Confirmar Senha</label>
+        <div class="valid-feedback">
+            Bom trabalho!
+        </div>
+        <div class="invalid-feedback">
+            Preencha novamente sua senha
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Declaro que li e estou de acordo com os <a href="#">Termos e Condições de Uso.</a>
+          </label>
+          <div class="invalid-feedback">
+            Você precisa aceitar os Termos.
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <button class="btn btn-secondary" type="submit" id="btnCadastrar">Cadastrar</button>
+        <p class="fs-6">Já é cadastrado?<a class="text-decoration-none" href="\index.html"> Faça seu login</a></p>
+      </div>
+    </form>
+  </div>
+<div class="container-image">
+<img src="\img\quadrado\2.png" alt="GoodPay propaganda das redes sociais" width="500px" height="500px"/>
+</div>
+</div>
+
+
+<div class="card-group"> 
+
+  <div class="card">
+    <img src="img/quadrado/9.png" class="d-block w-100" alt="Imagem Promocional da Goodpay sobre o sistema de CashBack.">
+  <div class="card-body">
+    <h5 class="card-title">CASHBACK</h5>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Saiba mais
+    </button>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Promoção</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <h6>BLACKFRIDAY NA GOODPAY</h6> <hr>
+      <p> 
+
+        Clientes que contratarem novos cartões de crédito a partir de novembro, podem usufruir de isenção de anuidade vitalícia nas bandeiras Elo e Visa. Os clientes que já possuem cartão de crédito, podem ter como benefício, pontos extras e cashback, nas compras realizadas entre os dias 22 e 29 de novembro. Conheça nossas promoções especiais da BlackFriday: consórcio, financiamento, cashback entre tantos outros! São inúmeras ofertas para você por até 50% de desconto.
+        Conheça os programas de CashBack e Programa de Pontos GoodPay.        
+      </p><hr>
+      <h6>Cashback:</h6>
+      <p>
+         
+
+        Nas compras realizadas em novembro, com o seu cartão da GoodPay, você poderá receber parte do valor gasto de volta na fatura ou adquirir pontos extras no Programa Pontos GoodPay. Você pode trocar seus pontos por crédito na fatura que equivale a um cashback de até 3%.
+        
+      </p><hr>
+      <h6>Programa de Pontos GoodPay:</h6>
+      <p>
+        
+
+        Entre os dias 22 e 29 de novembro você pode fazer diversas compras com até 50% de desconto usando o programa de pontos da GoodPay. Você usa seus pontos nas compras do dia a dia, trocando por produtos e descontos em diversas marcas.
+
+        <strong>Promoções válidas apenas entre os dias 22 a 29 de novembro de 2022.</strong> 
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vou perder essa promoção!</button>
+      <button type="button" class="btn btn-success">Eu quero!</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="card">
+  <img src="img/quadrado/5.png" class="d-block w-100" alt="Imagem Promocionanal da Goodpay sobre a BlackFriday.">
+<div class="card-body">
+  <h5 class="card-title">BLACK FRIDAY</h5>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Saiba mais
+  </button>
+</div>
+</div>
+
+  <div class="card">
+      <img src="img/quadrado/8.png" class="d-block w-100" alt="Imagem Promocional da Goodpay sobre o programa de Pontoa ">
+    <div class="card-body">
+      <h5 class="card-title">PROGRAMA DE PONTOS</h5>
+      <button type="button" class="btn btn-secondary align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Saiba mais
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="promocoes container-image">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+            <img src="img/quadrado/5.png" class="d-block w-100" alt="Imagem Promocionanal da Goodpay sobre a BlackFriday.">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="img/quadrado/9.png" class="d-block w-100" alt="Imagem Promocional da Goodpay sobre o sistema de CashBack.">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="img/quadrado/8.png" class="d-block w-100" alt="Imagem Promocional da Goodpay sobre o programa de Pontoa ">
+        </div>
+      
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+    </div>
+</div> -->
+
+
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+      </div>
+      <div class="col-sm-2">
+        <h5>Início</h5>
+        <ul>
+          <li><a href="">Quem Somos</a></li>
+          <li><a href="">SoulCode</a></li>
+          <li><a href="">Cadastro de Colaborador</a></li>
+          <li><a href="mapadosite.html">Mapa do site</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="">Aplicativo</a></li>
+          <li><a href="">E-bank</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Parceiros</a></li>
+
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Suporte</h5>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="">Recuperar Senha</a></li>
+          <li><a href="">Privacidade e Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <a href="">
+          <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+        </a>
+        <button type="button" class="btn btn-primary" id="liveToastBtn"><strong>Onde Estamos?</strong></button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+           <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <div id="img-toast">
+                <img src="img/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay Toast" width="30px">
+              </div>
+              <strong class="me-auto">Onde Estamos?</strong>
+              <small>agora mesmo</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="geolocation" class="toast-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>© 2022 Copyright - Soulcode Academy</p>
+  </div>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"
+></script>
+<script src="./js/index.js" type="module"></script>
+
+<script src="js/cadastro.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>

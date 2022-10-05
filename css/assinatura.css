@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+body {    
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    
+}
+.card-container {
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;    
+    gap: 50px;
+    
+}
+.card-group button{   
+
+    max-width: 100%;
+    margin-left: 0%;
+    
+}
+.table-container {
+    margin: 50px 100px;    
+}
+.card-header {
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    padding: 50px;
+}
