@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/receitas-e-despesas.css" />
+    <title>Controle de despesas</title>
+</head>
+
+<body>
+    
+        <div class="container-control">
+
+          <div>
+            <h2>Controle de despesas</h2>
+
+            <h4>Saldo atual</h4>
+
+            <h1 id="balance" class="balance">R$ 0.00</h1>
+          </div>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Receitas</h4>
+                <p id="money-plus" class="money plus">+ R$0.00</p>
+            </div>
+
+            <div>
+                <h4>Despesas</h4>
+                <p id="money-minus" class="money minus">- R$0.00</p>
+            </div>
+        </div>
+      
+        <form id="form" class="transactions1">
+          <h3>Adicionar transação</h3>
+            <div class="form-control">
+                <label for="text">Nome</label>
+                <input autofocus type="text" id="text" placeholder="Nome da transação" required />
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Valor <br />
+                    <small>Negativo: despesas - Positivo: receitas</small>
+                </label>
+                <input type="number" step="0.01" id="amount" placeholder="Valor da transação" required />
+            </div>
+
+            <button class="btn">Adicionar</button>
+        </form>
+
+        <div class="transactions1">
+          <h3>Transações</h3>
+          <ul id="transactions" class="transactions"></ul>        
+        </div>
+
+    </div>
+
+    <script src="./js/receitas-e-despesas.js"></script>
+
+  
+</body>
+
+</html>
