@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos financeiros</title>
+    <link rel="stylesheet" href="css/financeiros.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body  >
+    <section class="d-flex flex-wrap ">
+
+    <div  class="d-flex input-group-text divprincipal">
+        <section>
+            <h1>Objetivos financeiros</h1>
+            <p>Preencha abaixo suas informações:</p>
+        </section>
+        
+<form id="formulario">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Título do objetivo</span>
+            <input type="text" class="form-control" id="objetivo" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Dinheiro desejado</span>
+            <input type="number" placeholder="Ex: 100.00" class="form-control" id="dinheiro" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Prazo para a meta</span>
+            <input type="date" class="form-control" id="meta" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+         <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Capital Inicial</span>
+            <input type="number" class="form-control" placeholder="Ex: 100.00" id="capitalInicial" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+         
+
+        <button type="submit" id="btnEnviar" class="btn btn-success">Calcular</button>
+
+     </div>
+</form>
+        <div id="listaObjetivo"></div>
+
+   </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+
+        </script>
+        <script src="js/financeiros.js"></script>
+</body>
+
+</html>
