@@ -27,7 +27,7 @@ btnEntrar.addEventListener("click", () => {
       if (usuario.nomeUsuario == inputLogin) {
         usuarioValido = usuario;
         if (inputSenha == usuarioValido.senha) {
-          window.location.pathname = "/app.html";
+          window.location.pathname = "app.html";
         } else {
           /*modal de erro de senha precisa ser implementado
                     alertaLoginSenha.show()
