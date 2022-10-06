@@ -1,0 +1,107 @@
+
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    height: 35px;
+    box-sizing: border-box;
+    
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+#btn-facebook {
+    background-color: #3b5998;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#btn-instagram {
+    background-color: #E1306C;
+    color:white;
+    margin-bottom: 5px;
+}
+
+#btn-google {
+    background-color: #db4a39;
+    color:white;
+    margin-bottom: 5px;
+}
+
+#btn-github {
+    background-color: #171515;
+    color: white;
+    margin-bottom: 5px;
+    padding:5px;
+
+}
+
+#btn-linkedin {
+    background-color: #0976b4;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+.container{
+    margin: 100px 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 15px;
+    width: 1000px;
+    height: 500px;
+    padding: 0;
+    
+}
+
+.imagem{
+    width: 50%;
+    margin: 0;
+ 
+}
+.botoes{
+    width: 50%;
+}
+
+.img-goodpay{
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+    
+}
+
+.titulo{
+    color: rgb(113, 169, 29);
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+}
+
+.icones{
+    width: 22px;
+    
+}
+
+@media only screen and (max-width: 680px) {
+
+    .container {
+        
+        flex-direction: column;
+        margin: 0;
+        border: none;
+
+    }
+
+    .imagem{
+        margin: 100px;
+        border-radius: 15px;
+    }
+
+    .img-goodpay{
+        display: none;
+    }
+
+}

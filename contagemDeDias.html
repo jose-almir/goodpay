@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContagemDeDias</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css"></link>
+</head>
+<body>
+    <section class="contagemDias">
+        <div class="titulo">
+            <img class="logocalc" src="./img/logo/goodplayH.png"/>
+            <h4>Quantos dias faltam?</h4>
+            <p>Selecione o evento e descubra quantos dias faltam</p>
+        </div>
+    <div class="divForm">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Natal" value="12-25-2022">
+            <label class="form-check-label" for="flexRadioDefault1">
+            Natal
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="carnaval" value="02-21-2023"checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+            Carnaval
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="anoNovo" value="01-01-2023">
+            <label class="form-check-label" for="flexRadioDefault1">
+            Ano Novo
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="mulher" checked value="03-08-2023">
+            <label class="form-check-label" for="flexRadioDefault2">
+            Dia da Mulher
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="maes" value="05-14-2023">
+            <label class="form-check-label" for="flexRadioDefault1">
+            Dia das Mães
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="namorados" value="06-12-2023"checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+            Dia dos Namorados
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="pais" value="08-13-2023">
+            <label class="form-check-label" for="flexRadioDefault1">
+            Dia dos Pais
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="criancas" checked value="10-12-2022">
+            <label class="form-check-label" for="flexRadioDefault2">
+            Dia das Crianças
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="soulcode" checked value="12-15-2022">
+            <label class="form-check-label" for="flexRadioDefault1">
+            Aniversário da Soulcode Academy
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="goodpay" checked value="dataInserida">
+            <label for="start">Insira a data que deseja verificar</label>
+            <div>
+                <input id="login" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="dd/mm/aaaa"/>   
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-block divBotao">
+            <button class="btn btn-success testet" id="calcular" type="submit" >CALCULAR</button>
+            <button class="btn btn-success testet"  id="limpar" type="button">LIMPAR</button>
+        </div>
+    </div>
+    </section>
+    
+    <div class="modal-dialog Dias">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/contagemDias.js"></script>
+</body>
+<footer id="myFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+        </div>
+        <div class="col-sm-2">
+          <h5>Início</h5>
+          <ul>
+            <li><a href="">Quem Somos</a></li>
+            <li><a href="">SoulCode</a></li>
+            <li><a href="">Cadastro de Colaborador</a></li>
+            <li><a href="mapadosite.html">Mapa do site</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="">Aplicativo</a></li>
+            <li><a href="">E-bank</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Parceiros</a></li>
+            <li><a href="">Calculadora de dias</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Suporte</h5>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="">Recuperar Senha</a></li>
+            <li><a href="">Privacidade e Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <a href="">
+            <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+          </a>
+          <button type="button" class="btn btn-primary" id="liveToastBtn"><strong>Onde Estamos?</strong></button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <div id="img-toast">
+                  <img src="img/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay Toast" width="30px">
+                </div>
+                <strong class="me-auto">Onde Estamos?</strong>
+                <small>agora mesmo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div id="geolocation" class="toast-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2022 Copyright - Soulcode Academy</p>
+    </div>
+  </footer>
+</html>

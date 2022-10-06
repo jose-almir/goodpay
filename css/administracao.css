@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh; 
+   
+    font-family: sans-serif;
+}
+
+#div-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal th {
+    
+    background-color: rgb(84, 84, 84);
+    color: white;
+}
+.container-principal table {
+    margin-top: 50px;
+    border: solid;
+    width: 1000px;
+}

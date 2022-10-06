@@ -35,6 +35,38 @@ align-items: start;
   height: 55px;
   text-align: center;
 }*/
+#card-resultados{
+  background-color: #76d28d;
+  color: #222222;
+}
+
+#card-calculadora{
+
+  max-width: 70%;
+  padding: 20px;
+  background-color: #4bd86e;
+  
+}
+
+#btn-fgts {
+  background-color: #008037;
+  color: #f8f9fa;
+  border: 0;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
+
+#btn-fgts2 {
+  background-color: #3b3b3b;
+  color: #f8f9fa;
+  border: 0;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
 
 
 .titulo-faq {
@@ -194,6 +226,63 @@ min-height: 200px;
   font-size: 50px;
   margin-top: 20px;
 }
+
+/* ------ CONTAGEM DE DIAS ------ */
+.testet{
+  background-color: #44ac55;
+  color: white;
+  border: none;
+}
+
+.Dias {
+  display: none;
+}
+
+
+.btn:hover {
+  opacity: 0.70;
+}
+
+.divBotao{
+  padding: 10px;
+  color: white;
+}
+
+#btnConfirmar {
+  background-color: #44ac55;
+  color: white;
+  margin-inline-start: 5px;
+  margin-top: 5px;
+  
+}
+
+
+.divForm {
+  background-color: #f3f2ec;
+  border-radius: 5px; /*arredonda borda*/
+  padding: 10px;
+  margin: 10px; 
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+.titulo {
+  color: #000000;
+  text-align: center;
+  flex-direction: column;
+
+  padding: 2px;
+}
+
+.logocalc{
+  width: 200px;
+
+}
+
 
 /* ------ QUEM SOMOS NÓS  ------ */
 
