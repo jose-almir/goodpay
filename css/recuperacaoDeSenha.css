@@ -10,6 +10,10 @@ body {
 header {
     padding-bottom: 32px;
   }
+.modal-body{
+  font-style: italic;
+  font: white;
+}
   
 .container {
       width: 100vh;
@@ -17,7 +21,7 @@ header {
       display: flex;
       justify-content: center;
       position: relative;     
-      flex-wrap: wrap;
+      
       flex-grow: initial;
   }
   

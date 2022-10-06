@@ -16,12 +16,48 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-                <div>
-                    <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
-
+    <  <header>
+        <nav class="navbar navbar-expand-lg myNavBar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo/GoodPay.png" alt="Logo GoodPay" width="35"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../parceiros.html">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="quemSomos" href="#">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="devTeam" href="#">Dev Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="ajuda" href="#">Ajuda</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../img/usuario/usuarioLogado.jpeg" alt="" width="50px" class="myImg">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Minhas aplicações</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busque por algo" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
     </header>
     <section class="fixed-center">
         <div class="container d-flex align-items-center justify-content-center">
@@ -66,7 +102,7 @@
 
                     </div>
                     <div class="button d-flex justify-content-center">
-                        <button class="btn btn-success btn-lg" type="submit" id="button">Enviar</button>
+                        <button class="btn btn-outline-success btn-lg" type="submit" id="button">Enviar</button>
                     </div>
             </div>
         </div>
@@ -76,14 +112,15 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel"> Email enviado!</h1>
+                        <img src="./img/GoodPay.png" width="30px" alt="" srcset="">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"> E-mail enviado!</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" id="modalBody">
                         Um código foi enviado para seu email!
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" data-bs-dismiss="modal">OK </button>
+                        <button type="submit" class="btn btn-outline-success" data-bs-dismiss="modal"> OK </button>
                     </div>
                 </div>
             </div>
@@ -124,7 +161,7 @@
                             let textModal = document.getElementById("modalBody")
 
                             inputEmail = inputEmail.value
-                            textModal.innerText = `Um código de recuperação foi enviado para o e-mal: ${inputEmail}`
+                            textModal.innerText = `Um código de recuperação foi enviado ao E-mail: ${inputEmail}`
 
                             alertaCadastro.show()
                         }
