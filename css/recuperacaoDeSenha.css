@@ -10,16 +10,19 @@ body {
 header {
     padding-bottom: 32px;
   }
+.modal-body{
+  font-style: italic;
+  font: white;
+}
   
 .container {
       width: 100vh;
       height: 70vh;
       display: flex;
       justify-content: center;
-      position: relative;
-      flex-wrap: wrap;
-      flex-grow: initial;
+      position: relative;     
       
+      flex-grow: initial;
   }
   
 hr {
@@ -33,5 +36,6 @@ hr {
         display: flex;
         flex-wrap:wrap;
         gap:16px;
+        width: 100vh;
 }
   }

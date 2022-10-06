@@ -22,7 +22,7 @@ const usuarios = [
     nomeUsuario: "pedro-viana",
     senha: "12345",
     email: "pedro.viana@gmail.com",
-  },
+  }
 ];
 
 export default usuarios;

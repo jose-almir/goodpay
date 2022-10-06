@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="./css/calculadorajuroscomposto.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class='bodycal'>
+        <form action="javascript: montante()" class="my-form" id="resultado">
+            <img src="./img/logo/GoodPayBanner.png" alt="">
+            <h3>FAÇA SUA SIMULAÇÃO DE APLICAÇÃO!</h3>
+            <!-- <div class="divCapital">
+            <label class="my-label" for="capital">Capital Inicial</label>
+            <input type="Number" step=".01" class="capital my-inp" name="capital" placeholder="0,00">
+            </div>
+            
+            <div class="divCapital">
+            <label class="my-label" for="taxaFixa">Taxa de juros</label>
+            <input type="Number" min="0" max="100" step=".01" class="taxaFixa my-inp" name="taxaFixa" placeholder="0,00">
+            </div>
+
+            <div class="divCapital">
+            <label class="my-label" for="periodoDeAplicacao">Periodo de aplicação mensal</label>
+            <input type="Number" class="periodoDeAplicacao my-inp" name="periodoDeAplicacao" placeholder="0">
+            
+            </div>
+            <div class="divCapital">
+            <label class="my-label" for="valorMensal">Valor mensal</label>
+            <input type="Number" step=".01" class="valorMensal my-inp" name="valorMensal" placeholder="0,00">
+            <button class="button-calcular toda-largura" type="submit" value="Enviar">Calcular</button>
+            </div> -->
+
+
+            <!--BOOTSTRAP-->
+            <label class="my-label" for="capital">Capital Inicial</label>
+            <div class="divCapital input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">R$</span>
+                <input type="Number" class="capital my-inp form-control" placeholder="0,00" aria-label="0,00"
+                    aria-describedby="addon-wrapping">
+            </div>
+
+            <label class="my-label" for="valorMensal">Valor mensal</label>
+            <div class="divCapital input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">R$</span>
+                <input type="Number" class="valorMensal my-inp form-control" placeholder="0,00" aria-label="0,00"
+                    aria-describedby="addon-wrapping">
+            </div>
+
+
+            <label class="my-label" for="taxaFixa">Taxa de Juros</label>
+            <div class="divCapital input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">%</span>
+                <input type="Number" min="0" max="100" step=".01" class="taxaFixa my-inp form-control"
+                    placeholder="0,00" aria-label="0,00" aria-describedby="addon-wrapping">
+            </div>
+
+            <label class="my-label" for="periodoDeAplicacao">Periodo de aplicação mensal</label>
+            <div class="divCapital input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="Number" class="periodoDeAplicacao my-inp form-control" placeholder="0" aria-label="0"
+                    aria-describedby="addon-wrapping">
+            </div>
+
+            <button class="button-calcular toda-largura" type="submit" value="Enviar">Calcular</button>
+
+
+        </form>
+    </section>
+
+    <script src="js/calculadoraJurosComposto.js"></script>
+</body>
+
+</html>

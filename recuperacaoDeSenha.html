@@ -16,12 +16,48 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-                <div>
-                    <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
-
+    <  <header>
+        <nav class="navbar navbar-expand-lg myNavBar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo/GoodPay.png" alt="Logo GoodPay" width="35"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../parceiros.html">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="quemSomos" href="#">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="devTeam" href="#">Dev Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="ajuda" href="#">Ajuda</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../img/usuario/usuarioLogado.jpeg" alt="" width="50px" class="myImg">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Minhas aplicações</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busque por algo" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
     </header>
     <section class="fixed-center">
         <div class="container d-flex align-items-center justify-content-center">
@@ -31,25 +67,23 @@
             <div>
                 <h4>Preencha os campos para recuperar a senha</h4>
                 <hr>
-                <form class="row g-3 needs-validation" novalidate>
+                <form class="row g-3 main-form needs-validation" id="frmulario" novalidate>
                     <div>
                         <label for="validationCustom01" class="form-label">Nome de usuário
                         </label>
                         <div class="mb-3">
-
-                            <label for="exampleInputEmail1" class="form-label" id="email">Email</label>
                             <div class="input-group mb-3">
                                 <button class="btn btn-secondary icon">
                                     <span class="material-symbols-outlined d-flex justify-content-center">
                                         person
                                     </span>
                                 </button>
-                                <input type="name" class="form-control" id="validationCustom01" value="" required>  
+                                <input type="name" class="form-control" id="validationCustom01" value="" required>
                                 <div class="invalid-feedback">
-                                        Insira um nome de usuário.
+                                    Insira um nome de usuário.
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="mb-3">
@@ -60,16 +94,35 @@
                                 <span class="material-symbols-outlined">
                                     mail
                                 </span></button>
-                            <input type="email" class="form-control" id="validationCustom01" value="" required>  
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
                             <div class="invalid-feedback">
-                                    Insira um E-mail Válido.
+                                Insira um E-mail Válido.
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="button d-flex justify-content-center">
-                        <button class="btn btn-success btn-lg" type="submit" id="button">Enviar</button>
+                        <button class="btn btn-outline-success btn-lg" type="submit" id="button">Enviar</button>
                     </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="./img/GoodPay.png" width="30px" alt="" srcset="">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"> E-mail enviado!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        Um código foi enviado para seu email!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-success" data-bs-dismiss="modal"> OK </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -88,26 +141,40 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
-            'use strict'
+        const alertaCadastro = new bootstrap.Modal("#exampleModal")
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            ; (() => {
+                'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            let btnSelecao = document.getElementById("button")
+                            let inputEmail = document.getElementById("validationCustom02")
+                            let textModal = document.getElementById("modalBody")
+
+                            inputEmail = inputEmail.value
+                            textModal.innerText = `Um código de recuperação foi enviado ao E-mail: ${inputEmail}`
+
+                            alertaCadastro.show()
+                        }
+                        form.classList.add('was-validated')
                         event.stopPropagation()
-                    }
+                        event.preventDefault()
 
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
+                    }, false)
+                })
+            })()
     </script>
+
+
 </body>
 
 </html>

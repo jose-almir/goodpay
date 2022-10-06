@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Goodpay</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+          crossorigin="anonymous"
+        />
+       
+        <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+        <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
+            <a class="navbar-brand" href="#">[money for good]</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <img src="./img/logo/GoodPay.png" width="50" height="50" />
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Busque por algo"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
+                <div class="accordion mt-3" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Login Goodpay
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <div class="input-group input-group-lg mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-lg"
+                            >Login</span
+                          >
+                          <input
+                            id="login"
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-lg"
+                            >Senha</span
+                          >
+                          <input
+                            id="senha"
+                            type="password"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <div class="d-flex flex-column mb-3">
+                          <span class="badge bg-success d-flex justify-content-center mb-3"><h6 id="captcha" class="m-2"></h6></span>
+                          <input id="input-captcha" type="text" class="form-control input-group-lg" placeholder="Digite o Resultado da Soma" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                          <button id="btnEntrar" class="btn btn-outline-success" type="button">
+                            Entrar
+                          </button>
+                          <button class="btn btn-outline-dark" type="button">
+                            Cadastrar
+                          </button>
+                          <button id="btnRecuperar" class="btn btn-outline-success" type="button">
+                            Recuperar senha
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Developer Team
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <h3>
+                          Developer Team
+                          <span class="badge bg-success">JFS5</span>
+                        </h3>
+                        <p>
+                          Este aplicativo não tem conexão com o banco de dados, o
+                          desenvolvimento deste aplicativo tem como finalidade o
+                          aprendizado de aplicações e interface web. Assim o uso
+                          deste aplicativo deve ser pensado como um protótipo não
+                          funcional.
+                        </p>
+                        <p>
+                          A aplicação usa elementos de personalização em Bootstrap
+                          5, com Javascript local, os dados utilizados para e
+                          adicionados neste interface não são enviados a um
+                          serviço.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Soulcode Academy
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Tech For Good: 5 pilares que vão transformar o mundo:
+                          Educação, Diversidade, Saúde, Longevidade e
+                          Sustentabilidade
+                        </p>
+                        <p>
+                          Nossa missão é a formação e o emprego, aplicando os 5
+                          pilares do "Tech For Good". Ser uma escola inclusiva,
+                          que, através de nossa metodologia ágil, possa capacitar
+                          e educar em tecnologia, gerar oportunidades de emprego
+                          para todas as gerações, no início ou na ressignificação
+                          de carreira, com foco em diversidade e equidade. Numa
+                          profissão que fomente o bem-estar físico e mental,
+                          permitindo o equilíbrio entre a vida profissional e
+                          pessoal, através do trabalho remoto, com flexibilidade
+                          de horários, além de ser um negócio sustentável e
+                          responsável, socialmente.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Ajuda!
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                   #001 - Campo Vazio
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  Os campos não podem estar vazios
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  #002 - Usuário inválido
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  Verifique o nome de usuário e tente novamente ou clique em cadastrar para fazer o cadastro.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  #003 Senha Inválida 
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Senha incorreta, a senha deve conter no mínimo 5 digitos numéricos.                              
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                  #004 Numero de Tentativas 
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Você já fez 1 tentativa(s)! Com 3 será redirecionado(a) para recuperar a senha.                              
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                  #005 Operação Incorreta 
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Favor verificar a soma dos 2 números e digitar a resposta correta.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+  
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </nav>
+      </header>
+      <form action="" id="form-fgts">
+        <div id="card-calculadora" class="card mt-3 mb-3 mx-auto">
+          <div class="card-header " >
+           <strong>Calculadora FGTS</strong> 
+          </div>
+          <div class="card-body ">
+              <div class="row g-2">
+                  <div class="col-md">
+                    <div class="form-control">
+                      <button class="btn delete-todo"><span class="material-symbolos-outlined"><strong>&#36;</strong></span></button>
+                      <label for="floatingInputGrid">Salario bruto</label>
+                        <input type="currency"  class="form-control" id="floatingInputGrid1" placeholder="R$0,00" value="">
+                        
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    
+                    <div class="form-control"> 
+                      <button class="btn delete-todo"><span class="material-symbolos-outlined"><strong>&#36;</strong></span></button>
+                      <label for="floatingInputGrid">Saldo anterior</label>
+                      <input type="currency"class="form-control" id="floatingInputGrid2" placeholder="R$0,00" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 mt-2">
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="floatingInputGrid3" placeholder="name@example.com" value="data-inicial">
+                      <label for="floatingInputGrid">Data inicial</label>
+                    </div>
+                  </div>
+                  <div class="col-md">
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="floatingInputGrid4" placeholder="name@example.com" value="data-final">
+                      <label for="floatingInputGrid">Data Final</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Button trigger modal -->
+                <button id="btn-fgts" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <strong>Enviar</strong></button>
+  
+                
+                
+                <button id="btn-fgts2" class="btn btn-primary" type="submit"><strong>Limpar</strong></button>
+      
+          </div>
+        </div>
+      </form>
+    <div id="teste-imprimir"></div>
+    
+      <footer id="myFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="img/logo/goodplayH.png" alt="logo goodpay" height="85">
+            </div>
+            <div class="col-sm-2">
+              <h5>Início</h5>
+              <ul>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">SoulCode</a></li>
+                <li><a href="">Cadastro de Colaborador</a></li>
+                <li><a href="mapadosite.html">Mapa do site</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <h5>Serviços</h5>
+              <ul>
+                <li><a href="">Aplicativo</a></li>
+                <li><a href="">E-bank</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="./parceiros.html">Parceiros</a></li>
+    
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <h5>Suporte</h5>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="">Recuperar Senha</a></li>
+                <li><a href="">Privacidade e Termos de Uso</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <a href="">
+                <button type="button" class="btn btn-default"><strong>Cadastro</strong></button>
+              </a>
+              <button type="button" class="btn btn-primary" id="liveToastBtn"><strong>Onde Estamos?</strong></button>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <div id="img-toast">
+                      <img src="img/logo/GoodPay.png" class="rounded me-2" alt="Logo GoodPay Toast" width="30px">
+                    </div>
+                    <strong class="me-auto">Onde Estamos?</strong>
+                    <small>agora mesmo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div id="geolocation" class="toast-body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2022 Copyright - Soulcode Academy</p>
+        </div>
+      </footer>
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/index.js" type="module"></script>
+      <script type="module" src="/goodpay/js/calculadora.js" ></script>
+</body>
+</html>

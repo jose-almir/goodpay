@@ -1,0 +1,83 @@
+#resultado {
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+
+}
+
+.bodycal {
+
+    background-image: url("https://media.istockphoto.com/photos/gradient-with-reef-green-conifer-sulu-color-modern-texture-background-picture-id1063685006?k=20&m=1063685006&s=170667a&w=0&h=-MaMf70qyRxlc_lvIVABq9-Fpi4_t7XCN0KnuVtOFI4=");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.my-form {
+    border-radius: 6px;
+    padding: 20px 16px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+     
+ 
+}
+
+.button-calcular {
+    background-color:rgba(84, 168, 0, 0.651) ;
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    font-size: 16px;
+    margin: 6px 4px;
+    cursor: pointer;
+    border-radius: 3px;
+    align-items: center;
+}
+h3 {
+    
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.my-inp {
+
+    width: 80%;
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    
+}
+.my-label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+ .divCapital{
+    margin-bottom: 10px;
+    
+ }
+
+ .toda-largura {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.bodycal2 {
+    background-image: url("https://media.istockphoto.com/photos/gradient-with-reef-green-conifer-sulu-color-modern-texture-background-picture-id1063685006?k=20&m=1063685006&s=170667a&w=0&h=-MaMf70qyRxlc_lvIVABq9-Fpi4_t7XCN0KnuVtOFI4=");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.myIMG{
+    
+}

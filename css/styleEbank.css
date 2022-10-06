@@ -1,0 +1,42 @@
+.box01{
+    width: 200vh;
+       
+       
+       
+           
+       
+       
+ }
+ .altura{
+   height: 100px;
+   width: 100%;
+   margin: 36px;
+ }
+ .cards{
+    height: 100px;
+   width: 100px;
+   border-radius: 8px;
+ }
+ .box03{
+   height: 100%;
+   width: 100%;
+ }
+ .box04{
+   height: 80px;
+   border-radius: 8px;
+   
+   background-color: #8dca2d;
+ }
+ .box04:hover{
+   height: 80px;
+   border-radius: 8px;
+   background-color: #699523;
+ }
+ #mostrar{
+   display: none;
+ 
+ }
+ 
+ #passar_mouse:hover #mostrar{
+   display:block;
+   }
