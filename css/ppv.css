@@ -11,6 +11,10 @@ body {
 header {
     padding-bottom: 32px;
   }
+  .carousel-item img{
+    align-items: center;
+    display: flex;    
+  }
   
 .container {
       margin: 310px;
