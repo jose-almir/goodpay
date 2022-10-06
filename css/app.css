@@ -11,8 +11,8 @@ header {
     padding-bottom: 32px;
   }
 .bodymain {
-    
-    height: 100vh;
+    background-color: #ffffff;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,6 +20,7 @@ header {
     color: #434343;
     flex-wrap: wrap;
     font-size: 16px;
+    
 }
 
 main.cards {
@@ -36,6 +37,7 @@ main.cards section.card {
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
+    margin-top: 5px;
     margin-left: 32px;
 }
 
@@ -102,9 +104,6 @@ main.cards section.card.about {
 }
 
 @media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
 
     main.cards section.card {
         
@@ -119,6 +118,7 @@ main.cards section.card.about {
     main.cards section.card button {
         font-size: 70%;
     }
+
 
 }
 .banner {
